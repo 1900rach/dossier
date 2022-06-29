@@ -23,7 +23,7 @@
             //$user_pwd= htmlspecialchars($_POST['mdp']);
             
 //password_hash crypte le mot de passe et password_default le garde sans changement
-$check = $bdd->prepare('SELECT ID, NOM, PRENOM, DATE_NAIS, DEPART, PASSWORD, NUM_TEL, EMAIL FROM utilisateur WHERE  MATRICULE = ? NOM = ?  AND PRENOM = ?  AND DATE_NAIS = ? AND DEPART = ? AND PASSWORD = ? AND NUM_TEL = ? AND EMAIL = ? '); 
+$check = $bdd->prepare('SELECT * FROM utilisateur WHERE ID=? AND NOM = ?  AND PRENOM = ?  AND DATE_NAIS = ? AND DEPART = ? AND PASSWORD = ? AND NUM_TEL = ? AND EMAIL = ? '); 
 $check->execute(array($user_mat, $user_name, $user_prenom, $user_date, $user_dep,  $user_pwd, $user_numero, $user_email));
 //compte le nombre de fois où le serveur reconnait le même NOM et le même prénom déjà entré 
 if($check->rowCount() == 0){   
@@ -31,7 +31,7 @@ if($check->rowCount() == 0){
       //  die;  
 $insert = $bdd->prepare('INSERT INTO utilisateur(ID, NOM, PRENOM, DATE_NAIS, DEPART, PASSWORD, NUM_TEL, EMAIL) VALUES(?, ?, ?, ?, ?, ?, ?,?)');
 $insert->execute(array($user_mat, $user_name, $user_prenom, $user_date, $user_dep, $user_pwd, $user_numero, $user_email));
-header('location:login.php');
+header('location:index.php');
                        
    
 

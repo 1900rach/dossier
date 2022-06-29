@@ -23,10 +23,10 @@ $checkconnexion->execute(array($user_mat));
 
     if ($checkconnexion->rowCount() == 1) {
         $check = $checkconnexion->fetch();
-         var_dump (password_verify($user_pass, $check['PASSWORD']));
-die; 
+        //  var_dump (password_verify($user_pass, $check['PASSWORD']));
+            // die; 
         if (password_verify($user_pass, $check['PASSWORD'])) {
-            header('location : page/memoire.php');
+            header('location: page/memoire.php');
         }else{
             echo "<script> alert('Votre mot de passe est incorrect')</script>";
         }

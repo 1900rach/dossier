@@ -1,12 +1,11 @@
-
 <?php 
-      require 'sigh.php';
+      require 'log.php';
  ?>
 
 <!doctype html>
 <html lang="en">
   <head>
-  	<title>SIGH UP</title>
+  	<title>Login</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -20,62 +19,30 @@
 	<body class="img js-fullheight" style="background-image: url(images/bg.jpg);">
 	<section class="ftco-section">
 		<div class="container">
-			
+			<div class="row justify-content-center">
+				<div class="col-md-6 text-center mb-5">
+					<h2 class="heading-section">Login</h2>
+				</div>
+			</div>
 			<div class="row justify-content-center">
 				<div class="col-md-6 col-lg-4">
 					<div class="login-wrap p-0">
-		      	<h3 class="mb-4 text-center">Have an account?</h3>
-		      	<form  method="post" action="" class="signin-form">
-		      		<div class="form-group d-flex">
-						<div class="col-md-6">
-							<input type="text" class="form-control" name="mat" placeholder="matricule" required>
-						</div>
-						<div class="col-md-6 ">
-		  <input type="text" class="form-control" name="nom" placeholder="name" required>
-						</div>
-		      			
+		      	<h3 class="mb-4 text-center">welcome student</h3>
+		      	<form method="post" action="" class="signin-form">
+		      		<div class="form-group">
+		      			<input type="text" class="form-control" name="mat" placeholder="matricule" required>
 		      		</div>
-					  <div class="form-group d-flex">
-						<div class="col-md-6">
-							<input type="text" class="form-control" name="prenom" placeholder="surname" required>
-						</div>
-						<div class="col-md-6 ">
-							<input type="date" class="form-control" name="date" placeholder="date" required>
-						</div>
-	
-		      		</div>
-	            <div class="form-group d-flex">
-					<div class="col-md-6 ">
-						<select name="dep" required="" class="form-control text-dark" style="color: black;">
-							<option>departement</option>
-							<option value="GC">genie civil et urbain</option>
-							<option value="GTEL/GEL">genie electrique et des telecommunication</option>
-							<option value="GIN">genie informatique</option>
-							<option value="GI/GM">genie industriel et mecanique</option>
-						</select>
-					</div>
-					<div class="col-md-6">
-						<input id="password-field" name="pwd"  type="password" class="form-control" placeholder="Password" required>
-						<span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
-					</div>	
-				</div>
-				<div class="form-group d-flex">
-				<div class="col-md-6">
-					<input type="text" name="num" class="form-control" placeholder="telephone" required>
-				</div>
-				<div class="col-md-6 ">
-					<input type="text" name="mail" class="form-control" placeholder="email" required>
-				</div>
-			  </div>
-			  <div class="form-group d-flex">
-	            <div class="col-md-6">
-				<input type="submit" name="valider" class="form-control btn btn-primary submit px-3" value="s'inscrire" >
-				</div>
-				</div>
+	            <div class="form-group">
+	              <input id="password-field" type="password" name="pwd" class="form-control" placeholder="Password" required>
+	              <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+	            </div>
+	            <div class="form-group">
+				<input type="submit" class="form-control btn btn-primary submit px-3" name="valider" value="connexion">
+	            </div>
 	            <div class="form-group d-md-flex">
 	            	<div class="w-50">
-		            	<label class="checkbox-wrap checkbox-primary">Remember Me
-									  <input type="checkbox" checked>
+		            	<label class="checkbox-wrap checkbox-primary">
+							<a href="signup.php">i dont have account </a>
 									  <span class="checkmark"></span>
 									</label>
 								</div>
