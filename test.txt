@@ -1,0 +1,32 @@
+bon je te montre directement comment faire des commits et envoyer tes fichiers ave vscode sur son terminal intergré
+
+je vais lister les commandes :) :)
+
+bien déjà (crtl + ù ) pour ouvrir le terminal
+j'ai effacé mon terminal pour qu'on commence ensemble
+
+bien si tu travaille sur un dossier avec quelqu'un .......collaborateurs
+
+tu peux cloner le depot avec........(git clone ...le lien du depot.... )
+
+testons ça ......
+
+pffff c'est lent mais attends un peu ....
+  pfff mauvaise connection bien je vais utiliser l'historique de mon terminal
+
+  git clone https://github.com/1900rach/dossier.git   
+  la partie soulignée est donc le lien du repos
+  jai donc chargé le repos DOSSIER dans ma machine ....................
+  je peux modifier comme je veux et après il faut que je remette a github .........
+
+dans le meme repos , je cree une branche .......
+
+là je dois entrer le nom de la branche que je veux creer 
+la branche  main est la brache d'origine je cree donc une autre branche ................
+et je peux mettre un message pour mon comit avec 
+ git commit -m  
+
+ le message en bleu est mon commit .......
+
+ là j'ai fait un changement 
+ bien il me faut donc ajouter un ficher ......
